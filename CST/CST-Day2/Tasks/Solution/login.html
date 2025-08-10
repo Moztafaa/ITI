@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./login.css" />
+    <title>Login Form</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login</h1>
+      <form method="GET" action="./Day1-sol/Second.html">
+        <div class="form-group">
+          <label for="username">User name:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter user name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">User Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter user password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="remember" name="remember" value="1" />
+          <label for="remember">Remember me</label>
+        </div>
+
+        <div class="form-group">
+          <button type="submit"><span class="signIn">Sign In..</span></button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="RegisterHead">
+      <h1><u>Registration Form</u></h1>
+    </div>
+
+    <form action="https://formspree.io/" method="POST">
+      <table>
+        <tr>
+          <td><label for="first-name">First Name</label></td>
+          <td style="border-right: none">
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Enter your first name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="last-name">Last Name</label></td>
+          <td style="border-right: none">
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Enter your last name"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email</label></td>
+          <td style="border-right: none">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td style="border-right: none">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <td style="padding: 50px 50px 50px 20px">
+            <label for="gender">Gender:</label>
+          </td>
+          <td style="border-right: none">
+            <input type="radio" id="female" name="gender" value="female" />
+            <label for="female">Female</label><br />
+            <hr style="color: #dcdcdc" />
+            <input type="radio" id="male" name="gender" value="male" />
+            <label for="male">Male</label>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="country">Country:</label></td>
+          <td style="border-right: none">
+            <select id="country" name="country" required>
+              <option value="">Select a Country</option>
+              <optgroup label="North America">
+                <option value="usa">United States</option>
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+              </optgroup>
+              <optgroup label="Europe">
+                <option value="uk">United Kingdom</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+                <option value="italy">Italy</option>
+                <option value="spain">Spain</option>
+              </optgroup>
+              <optgroup label="Asia">
+                <option value="china">Palastine</option>
+                <option value="japan">Japan</option>
+                <option value="india">India</option>
+              </optgroup>
+              <optgroup label="Africa">
+                <option value="nigeria">Nigeria</option>
+                <option value="south-africa">South Africa</option>
+                <option value="kenya">Kenya</option>
+                <option value="egypt">Egypt</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="birthday">Birthday:</label></td>
+          <td style="border-right: none">
+            <input type="date" id="birthday" name="birthday" required />
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="2"
+            style="
+              border-right: none;
+              text-align: center;
+              font-weight: bold;
+              text-decoration: underline;
+              padding: 15px;
+            "
+          >
+            Interests
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-right: none">
+            <div>
+              <label
+                ><input type="checkbox" name="interests" value="sports" />
+                Sports</label
+              >
+              <label
+                ><input type="checkbox" name="interests" value="music" />
+                Music</label
+              >
+              <label
+                ><input type="checkbox" name="interests" value="fashion" />
+                Fashion</label
+              >
+              <br />
+              <label
+                ><input type="checkbox" name="interests" value="reading" />
+                Reading</label
+              >
+              <label
+                ><input type="checkbox" name="interests" value="shopping" />
+                Shopping</label
+              >
+              <label
+                ><input type="checkbox" name="interests" value="movies" />
+                Movies</label
+              >
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="2"
+            style="
+              border-right: none;
+              text-align: center;
+              font-weight: bold;
+              text-decoration: underline;
+              padding: 15px;
+            "
+          >
+            Bio
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="border-right: none">
+            <textarea
+              id="bio"
+              name="bio"
+              rows="6"
+              style="width: 100%; resize: none"
+              placeholder="Tell us about yourself..."
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td
+            colspan="2"
+            style="
+              text-align: center;
+              padding: 20px;
+              border-right: none;
+              border-bottom: none;
+            "
+          >
+            <button type="submit" class="btn-register">Register</button>
+            <button type="reset" class="btn-clear">Clear</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

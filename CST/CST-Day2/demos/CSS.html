@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a[href="home.html"] {
+        color: red;
+      }
+      a[href$=".pdf"] {
+        color: green;
+      }
+
+      /* div {
+        width: 150px;
+        height: 150px; */
+      /* border-top-color: green;
+        border-top-width: 5px;
+        border-top-style: dotted;
+        border-left-color: red;
+        border-left-width: 5px;
+        border-left-style: solid; */
+      /* border: 5px solid red;
+        border-top: 5px dashed rgb(0, 255, 60); */
+      /* outline: dotted 5px blue; */
+      /* padding-left: 10px; */
+      /* margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 78px; */
+      /* margin:t r b l;
+        margin:t rl b;
+        margin:tb rl;
+        margin:tbrl; */
+      /* } */
+      div {
+        color: aqua;
+        border: solid 5px red;
+      }
+      div a {
+        color: inherit;
+      }
+
+      /* div > b {
+        /*direct child*/
+      /* color: red;
+      } */
+      /* h1 + h2{
+        color:red;
+      } */
+      h1 + h2 {
+        text-align: center;
+        color: green !important;
+      }
+      #h2id {
+        color: red;
+      }
+
+      #b1id {
+        color: yellow;
+      }
+      b {
+        color: blueviolet;
+      }
+      /* ~ general sibling */
+      /* + direct sibling */
+    </style>
+  </head>
+  <body>
+    <h2>heading#2 direct sibling</h2>
+    <h1>CSS DEmo</h1>
+    <h2 id="h2id">heading#2 direct sibling</h2>
+    <h3>ay 7aga</h3>
+    <h2>heading#2 another sibling</h2>
+    <div>
+      <h2>heading#2 inside div that is sibling to h1</h2>
+      <b>bold element that is direct child to div element</b>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+      ipsam eaque reiciendis quasi officia ex consequuntur. Ratione quos quam
+      beatae inventore autem odio laboriosam at dignissimos atque, quia natus.
+      Veritatis.
+      <p>
+        <b id="b1id">bold element inside p tag that is child to div</b>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
+        vitae sequi odit reprehenderit adipisci culpa porro, accusamus veritatis
+        quos delectus ea obcaecati, praesentium, dolore recusandae id. Accusamus
+        minima dolorum exercitationem?
+      </p>
+      <a href="main.html">main</a>
+    </div>
+    <h2>heading#2 another sibling</h2>
+    <a href="home.html">home</a>
+    <a href="home.pdf">home</a>
+    <a href="abc.pdf">home</a>
+    <a href="xyz.pdf">home</a>
+  </body>
+</html>

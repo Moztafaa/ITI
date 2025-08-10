@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* center the image in the middle of the screen with width and hieght 500 */
+body {
+  background-color: #ffd9d9;
+  margin: 0;
+  height: 100vh;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content-title,
+.content {
+  margin-bottom: 30px;
+}
+
+#different-fonts {
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+#different-sizes {
+  font-size: 10px;
+}
+
+.gif {
+  text-align: center;
+  img {
+    width: 500px;
+  }
+}
+
+.toTop {
+  width: 100%;
+  .next {
+    float: right;
+    margin-right: 20px;
+  }
+}

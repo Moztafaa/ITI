@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="date" />
+    <input type="color" />
+
+    <form
+      action="https://formkeep.com/f/b750b338ed17"
+      accept-charset="UTF-8"
+      enctype="multipart/form-data"
+      method="POST"
+    >
+      <label for="email-address">Email Address</label>
+      <input type="email" id="email-address" name="email" />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <form method="get" action="home.html">
+      <input type="email" />
+      <label for="usrnm">User Na<u>m</u>e</label>
+      <input
+        required
+        type="text"
+        id="usrnm"
+        name="usrname"
+        placeholder="username"
+        accesskey="m"
+      />
+      <label for="usrpswrd">User password</label>
+      <input
+        type="password"
+        id="usrpswrd"
+        name="usrpassword"
+        placeholder="userpassword"
+      />
+      <select>
+        <optgroup label="o1">
+          <option>option#1</option>
+          <option>option#2</option>
+          <option>option#3</option>
+        </optgroup>
+        <optgroup label="o2" disabled>
+          <option>option#4</option>
+          <option>option#5</option>
+          <option>option#6</option>
+        </optgroup>
+        <optgroup label="o3">
+          <option>option#7</option>
+          <option>option#8</option>
+          <option>option#9</option>
+        </optgroup>
+      </select>
+      <input type="checkbox" name="chk1" />
+      <input type="checkbox" name="chk2" />
+      <input type="checkbox" name="chk3" />
+      <input type="checkbox" name="chk4" />
+      <input type="checkbox" name="chk5" />
+      <br />
+      <input type="radio" name="course" id="html" value="html" /><label
+        for="html"
+        >HTML</label
+      ><br />
+      <input type="radio" name="course" id="css" value="css" /><label for="css"
+        >CSS</label
+      ><br />
+      <input type="radio" name="course" id="js" value="js" /><label for="js"
+        >js</label
+      >
+      <br />
+      <textarea cols="40" rows="5"></textarea>
+      <input type="submit" value="send info" />
+      <input type="reset" value="clear fields" />
+    </form>
+  </body>
+</html>
+
+<!-- ?usrname=ali&usrpassword=123&course=js -->
