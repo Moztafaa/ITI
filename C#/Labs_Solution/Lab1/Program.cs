@@ -1,5 +1,4 @@
 ﻿using Lab1;
-using Spectre.Console;
 
 /*
 1)	Fill_employee data that takes employee data from user and  return struct 
@@ -10,12 +9,13 @@ using Spectre.Console;
 
 IEnumerable<int> tes = [1, 3, 3];
 
-var employee = new Employee();
-var employees = employee.Fill_Employee();
 
-foreach (var emp in employees)
+Employee employee = new Employee();
+IEnumerable<Employee> employees = employee.Fill_Employee();
+
+foreach (Employee emp in employees)
 {
-  emp.PrintEmpData();
+    emp.PrintEmpData();
 
 }
 
