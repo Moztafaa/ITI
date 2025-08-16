@@ -19,9 +19,9 @@ public struct Employee
     {
         List<Employee> employees = new();
         Console.WriteLine("Enter the number of your employees:");
-        string? number = Console.ReadLine();
-        int.TryParse(number, out int no);
-        for (int i = 0; i < no; i++)
+        var number = Console.ReadLine();
+        int.TryParse(number, out var no);
+        for (var i = 0; i < no; i++)
         {
             Employee emp = new Employee
             {
@@ -29,7 +29,7 @@ public struct Employee
                 Id = ++autoId
             };
             Console.Write("Enter employee name: ");
-            string? name = Console.ReadLine();
+            var name = Console.ReadLine();
 
             if (!string.IsNullOrWhiteSpace(name))
             {
@@ -45,7 +45,7 @@ public struct Employee
 
             // take position form the user 
             Console.Write("Select employee position: 1-Manager, 2-Offcier, 3-Clerk: ");
-            int.TryParse(Console.ReadLine(), out int positionInput);
+            int.TryParse(Console.ReadLine(), out var positionInput);
             emp.EmployeePosition = (Position) positionInput;
 
             employees.Add(emp);

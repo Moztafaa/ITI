@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj": {}
+    "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\DeepLinq\\DeepLinq.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj": {
+    "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\DeepLinq\\DeepLinq.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj",
-        "projectName": "Lab2_sol",
-        "projectPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj",
+        "projectUniqueName": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\DeepLinq\\DeepLinq.csproj",
+        "projectName": "DeepLinq",
+        "projectPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\DeepLinq\\DeepLinq.csproj",
         "packagesPath": "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\obj\\",
+        "outputPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\DeepLinq\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -50,28 +50,6 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
-          "dependencies": {
-            "ClrHeapAllocationAnalyzer": {
-              "target": "Package",
-              "version": "[3.0.0, )"
-            },
-            "Dumpify": {
-              "target": "Package",
-              "version": "[0.6.6, )"
-            },
-            "ReflectionAnalyzers": {
-              "target": "Package",
-              "version": "[0.3.1, )"
-            },
-            "SonarAnalyzer.CSharp": {
-              "target": "Package",
-              "version": "[10.15.0.120848, )"
-            },
-            "StyleCop.Analyzers": {
-              "target": "Package",
-              "version": "[1.2.0-beta.556, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

@@ -40,9 +40,9 @@ dotnet_style_coalesce_expression                                   = true : warn
 dotnet_style_null_propagation                                      = true : warning
 
 # Implicit and explicit types: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#var
-csharp_style_var_for_built_in_types                                = false : warning
-csharp_style_var_when_type_is_apparent                             = false : warning
-csharp_style_var_elsewhere                                         = false : warning
+csharp_style_var_for_built_in_types                                = true : suggestion
+csharp_style_var_when_type_is_apparent                             = false: warning
+csharp_style_var_elsewhere                                         = false: warning 
 
 # Expression-bodied members: https://docs.microsoft.com/en-us/visualstudio/ide/editorconfig-code-style-settings-reference#expression_bodied_members
 csharp_style_expression_bodied_methods                             = true : warning
@@ -146,3 +146,52 @@ dotnet_naming_rule.everything_else_naming.symbols                  = everything_
 dotnet_naming_rule.everything_else_naming.style                    = camel_case_style
 dotnet_naming_symbols.everything_else.applicable_kinds             = *
 dotnet_naming_symbols.everything_else.applicable_accessibilities   = *
+
+# IDE0160: Convert to block scoped namespace
+dotnet_diagnostic.IDE0160.severity = none
+
+# Default severity for analyzer diagnostics with category 'StyleCop.CSharp.DocumentationRules'
+dotnet_analyzer_diagnostic.category-StyleCop.CSharp.DocumentationRules.severity = none
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+
+# IDE0061: Use block body for local function
+csharp_style_expression_bodied_local_functions = false
+
+# IDE1006: Naming Styles
+dotnet_diagnostic.IDE1006.severity = none
+
+# IDE0007: Use implicit type
+# dotnet_diagnostic.IDE0007.severity = suggestion
+
+# SA1507: Code should not contain multiple blank lines in a row
+dotnet_diagnostic.SA1507.severity = none
+
+# S3903: Types should be defined in named namespaces
+dotnet_diagnostic.S3903.severity = none
+
+# SA1201: Elements should appear in the correct order
+dotnet_diagnostic.SA1201.severity = none
+
+# SA1005: Single line comments should begin with single space
+dotnet_diagnostic.SA1005.severity = none
+
+# SA1123: Do not place regions within elements
+dotnet_diagnostic.SA1123.severity = none
+
+# SA1515: Single-line comment should be preceded by blank line
+dotnet_diagnostic.SA1515.severity = none
+
+# S125: Sections of code should not be commented out
+dotnet_diagnostic.S125.severity = none
+
+# SA1512: Single-line comments should not be followed by blank line
+dotnet_diagnostic.SA1512.severity = none
+
+# SA1003: Symbols should be spaced correctly
+dotnet_diagnostic.SA1003.severity = none
+dotnet_diagnostic.SA1009.severity = none
+
+# SA1508: Closing braces should not be preceded by blank line
+dotnet_diagnostic.SA1508.severity = none

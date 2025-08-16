@@ -1,11 +1,30 @@
 {
   "version": 2,
-  "dgSpecHash": "zlcxDXV6AQE=",
+  "dgSpecHash": "jFgewUfZa4s=",
   "success": true,
   "projectFilePath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\clrheapallocationanalyzer\\3.0.0\\clrheapallocationanalyzer.3.0.0.nupkg.sha512",
     "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\dumpify\\0.6.6\\dumpify.0.6.6.nupkg.sha512",
-    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512"
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis\\3.4.0\\microsoft.codeanalysis.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\2.9.6\\microsoft.codeanalysis.analyzers.2.9.6.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.common\\3.4.0\\microsoft.codeanalysis.common.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.4.0\\microsoft.codeanalysis.csharp.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.csharp.workspaces\\3.4.0\\microsoft.codeanalysis.csharp.workspaces.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.visualbasic\\3.4.0\\microsoft.codeanalysis.visualbasic.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.visualbasic.workspaces\\3.4.0\\microsoft.codeanalysis.visualbasic.workspaces.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\microsoft.codeanalysis.workspaces.common\\3.4.0\\microsoft.codeanalysis.workspaces.common.3.4.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\reflectionanalyzers\\0.3.1\\reflectionanalyzers.0.3.1.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\sonaranalyzer.csharp\\10.15.0.120848\\sonaranalyzer.csharp.10.15.0.120848.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\spectre.console\\0.48.0\\spectre.console.0.48.0.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.556\\stylecop.analyzers.1.2.0-beta.556.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.556\\stylecop.analyzers.unstable.1.2.0.556.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\system.composition\\1.0.31\\system.composition.1.0.31.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\system.composition.attributedmodel\\1.0.31\\system.composition.attributedmodel.1.0.31.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\system.composition.convention\\1.0.31\\system.composition.convention.1.0.31.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\system.composition.hosting\\1.0.31\\system.composition.hosting.1.0.31.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\system.composition.runtime\\1.0.31\\system.composition.runtime.1.0.31.nupkg.sha512",
+    "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\system.composition.typedparts\\1.0.31\\system.composition.typedparts.1.0.31.nupkg.sha512"
   ],
   "logs": []
 }

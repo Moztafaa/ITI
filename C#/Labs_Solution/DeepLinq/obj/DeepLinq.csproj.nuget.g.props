@@ -13,10 +13,4 @@
     <SourceRoot Include="C:\Users\Mostafa Ibrahim\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
-  <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
-    <PkgStyleCop_Analyzers_Unstable Condition=" '$(PkgStyleCop_Analyzers_Unstable)' == '' ">C:\Users\Mostafa Ibrahim\.nuget\packages\stylecop.analyzers.unstable\1.2.0.556</PkgStyleCop_Analyzers_Unstable>
-    <PkgSonarAnalyzer_CSharp Condition=" '$(PkgSonarAnalyzer_CSharp)' == '' ">C:\Users\Mostafa Ibrahim\.nuget\packages\sonaranalyzer.csharp\10.15.0.120848</PkgSonarAnalyzer_CSharp>
-    <PkgReflectionAnalyzers Condition=" '$(PkgReflectionAnalyzers)' == '' ">C:\Users\Mostafa Ibrahim\.nuget\packages\reflectionanalyzers\0.3.1</PkgReflectionAnalyzers>
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\Mostafa Ibrahim\.nuget\packages\microsoft.codeanalysis.analyzers\2.9.6</PkgMicrosoft_CodeAnalysis_Analyzers>
-  </PropertyGroup>
 </Project>
