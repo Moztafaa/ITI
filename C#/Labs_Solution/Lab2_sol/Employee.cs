@@ -4,13 +4,15 @@ using System;
 
 public class Employee : IEmployee
 {
-    public Employee() { }
+    public Employee()
+    {
+    }
 
     public Employee(int id, string? name, float salary)
     {
         Id = id;
         Name = name;
-        Salary = salary;  
+        Salary = salary;
     }
 
     public int Years { get; set; }

@@ -1,0 +1,5 @@
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net8.0\DeepLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net8.0\DeepLinq.AssemblyInfoInputs.cache
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net8.0\DeepLinq.AssemblyInfo.cs
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net8.0\DeepLinq.csproj.CoreCompileInputs.cache
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net8.0\DeepLinq.sourcelink.json

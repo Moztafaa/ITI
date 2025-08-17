@@ -7,7 +7,7 @@
 4)	Use the functions for array of employee  
 */
 
-IEnumerable<int> tes = [1, 3, 3];
+// IEnumerable<int> tes = [1, 3, 3];
 
 
 Employee employee = new Employee();

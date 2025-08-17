@@ -1,0 +1,15 @@
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\bin\Debug\net9.0\DeepLinq.exe
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\bin\Debug\net9.0\DeepLinq.deps.json
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\bin\Debug\net9.0\DeepLinq.runtimeconfig.json
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\bin\Debug\net9.0\DeepLinq.dll
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\bin\Debug\net9.0\DeepLinq.pdb
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.AssemblyInfoInputs.cache
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.AssemblyInfo.cs
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.csproj.CoreCompileInputs.cache
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.sourcelink.json
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.dll
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\refint\DeepLinq.dll
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.pdb
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\DeepLinq.genruntimeconfig.cache
+C:\Users\Mostafa Ibrahim\Documents\ITI-4Months\ITI\C#\Labs_Solution\DeepLinq\obj\Debug\net9.0\ref\DeepLinq.dll

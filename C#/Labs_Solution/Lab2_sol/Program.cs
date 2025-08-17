@@ -12,7 +12,7 @@ internal static class Program
 {
     private static void Main(string[] args)
     {
-        var Employee = new Employee();
+        // var Employee = new Employee();
         #region Calculate
         // int Calculate(in int num1, in int num2, out int mult)
         // {
