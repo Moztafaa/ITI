@@ -20,7 +20,7 @@ internal static class ClassRoom
                 },
                 Hobbies = new List<string> { "Reading", "Football", "Coding" }
             },
-            new Student
+                new Student
             {
                 Name = "Sara",
                 Grades = new Dictionary<string, int>
@@ -28,7 +28,7 @@ internal static class ClassRoom
                     { "Math", 95 },
                     { "Science", 89 },
                     { "English", 91 },
-                    { "History", 87 }
+                        { "History", 87 }
                 },
                 Hobbies = new List<string> { "Painting", "Swimming", "Reading" }
             },
@@ -59,14 +59,13 @@ internal static class ClassRoom
         {
             System.Console.WriteLine("Average grade for {0} is:", subject);
             var avg = students
-                            .Where(s => s.Grades.ContainsKey(subject))
-                            .Average(s => s.Grades[subject]);
+                        .Where(s => s.Grades.ContainsKey(subject))
+                        .Average(s => s.Grades[subject]);
             System.Console.WriteLine("{0} has an average grade of {1}", subject, avg);
         }
 
 
-
-        var students1 = students.Select(s => new Student(s)).ToList();
+        List<Student> students1 = students.Select(s => new Student(s)).ToList();
 
         // Task 2
         System.Console.WriteLine("\n____ Task 2: ____");

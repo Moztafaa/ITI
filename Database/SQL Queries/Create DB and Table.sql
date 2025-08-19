@@ -5,16 +5,16 @@
 --Here are the details:
 
 --Pros:
---• Storing NULL in a sparse column takes up no space at all
---• Up to 30,000 columns
---• To any external application the column will behave the same
---• Sparse columns fit well with filtered indexes to index on non-NULL values
+--ï¿½ Storing NULL in a sparse column takes up no space at all
+--ï¿½ Up to 30,000 columns
+--ï¿½ To any external application the column will behave the same
+--ï¿½ Sparse columns fit well with filtered indexes to index on non-NULL values
 
 --Cons:
---• If a sparse column has data it takes 4 more bytes than a normal column
---• Not all data types can be sparse: TEXT, NTEXT, IMAGE, TIMESTAMP, user-defined data types, GEOMETRY, GEOGRAPHY, and VARBINARY(MAX) with the FILESTREAM attribute
---• Computed columns cannot be sparse
---• Cannot have default values
+--ï¿½ If a sparse column has data it takes 4 more bytes than a normal column
+--ï¿½ Not all data types can be sparse: TEXT, NTEXT, IMAGE, TIMESTAMP, user-defined data types, GEOMETRY, GEOGRAPHY, and VARBINARY(MAX) with the FILESTREAM attribute
+--ï¿½ Computed columns cannot be sparse
+--ï¿½ Cannot have default values
 
 CREATE TABLE Survey (
       survey_nbr INT NOT NULL PRIMARY KEY,

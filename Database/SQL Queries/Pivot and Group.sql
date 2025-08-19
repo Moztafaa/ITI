@@ -39,7 +39,6 @@ from (
 	from sales
 	group by rollup(SalesmanName)
 	) as newta
-	ble
 
 select isnull(x,0),Quantities
 from (

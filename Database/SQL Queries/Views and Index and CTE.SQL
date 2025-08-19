@@ -2,24 +2,26 @@
 --can't take parameters
 
 --IS A select statment
---•	Simplify construction of complex queries
---•	Specify user view
---•	Limit access to data [grant revoke]
---•	Hide names of database objects [table name and columns]
---•	increase performance (only Index and partitioned view)
+--ï¿½	Simplify construction of complex queries
+--ï¿½	Specify user view
+--ï¿½	Limit access to data [grant revoke]
+--ï¿½	Hide names of database objects [table name and columns]
+--ï¿½	increase performance (only Index and partitioned view)
 
 --types of views
 --Standard view
 --partitioned view
 --indexed views
+use Company_SD
 
+go
 create view v2(studept_name,dept_name)
 as
 	select st_fname,dept_name
 	from student s,department d
 	where	s.dept_id=d.dept_id
 	and s.st_address='cairo'
-
+go
 select * from v2
 select studept_name from v2
 
