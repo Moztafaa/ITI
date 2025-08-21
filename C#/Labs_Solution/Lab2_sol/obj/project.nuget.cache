@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "jFgewUfZa4s=",
+  "dgSpecHash": "AU3a/MFyvB8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj",
+  "projectFilePath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\clrheapallocationanalyzer\\3.0.0\\clrheapallocationanalyzer.3.0.0.nupkg.sha512",
     "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\dumpify\\0.6.6\\dumpify.0.6.6.nupkg.sha512",

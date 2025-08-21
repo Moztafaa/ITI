@@ -977,9 +977,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj",
-      "projectName": "Lab2_sol",
-      "projectPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2_sol.csproj",
+      "projectUniqueName": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2.csproj",
+      "projectName": "Lab2",
+      "projectPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\Lab2.csproj",
       "packagesPath": "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\C#\\Labs_Solution\\Lab2_sol\\obj\\",
       "projectStyle": "PackageReference",

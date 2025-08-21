@@ -5,11 +5,13 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1", "Lab1\Lab1.csproj", "{8F0B6DF7-0F4C-4D6D-AB8D-87DB5C5734EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2_sol", "Lab2_sol\Lab2_sol.csproj", "{C4524D7D-0344-43ED-A813-A029E098AEB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab2", "Lab2_sol\Lab2.csproj", "{C4524D7D-0344-43ED-A813-A029E098AEB4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeepLinq", "DeepLinq\DeepLinq.csproj", "{3FC3FEAE-58C9-443D-A15F-3E221725F521}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lec3", "Lec3\Lec3.csproj", "{D503AA75-514B-46E7-994C-3FB6BDC099E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab3", "Lec3\Lab3.csproj", "{D503AA75-514B-46E7-994C-3FB6BDC099E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab4", "Lab4\Lab4.csproj", "{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,18 @@ Global
 		{D503AA75-514B-46E7-994C-3FB6BDC099E4}.Release|x64.Build.0 = Release|Any CPU
 		{D503AA75-514B-46E7-994C-3FB6BDC099E4}.Release|x86.ActiveCfg = Release|Any CPU
 		{D503AA75-514B-46E7-994C-3FB6BDC099E4}.Release|x86.Build.0 = Release|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Debug|x64.Build.0 = Debug|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Debug|x86.Build.0 = Debug|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Release|x64.ActiveCfg = Release|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Release|x64.Build.0 = Release|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Release|x86.ActiveCfg = Release|Any CPU
+		{68ADA2D5-B4C2-465C-8A05-F317FB442AE2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
