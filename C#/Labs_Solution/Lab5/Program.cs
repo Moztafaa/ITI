@@ -6,12 +6,14 @@ using Lab5;
 using System;
 
 // use the event
-WeatherEvent weatherEvent = new WeatherEvent();
+WeatherEvent weatherEvent = new();
 WeatherEvent.WeatherHandler handler = message => Console.WriteLine(message);
 weatherEvent.WeatherChanged += handler;
+
+
 Console.Write("Enter temperature in Celsius: ");
-var input = Console.ReadLine();
-if (int.TryParse(input, out var celsius))
+string? input = Console.ReadLine();
+if (int.TryParse(input, out int celsius))
 {
     weatherEvent.CheckTemperature(celsius);
 }

@@ -19,17 +19,17 @@ public struct Employee
     {
         List<Employee> employees = new();
         Console.WriteLine("Enter the number of your employees:");
-        var number = Console.ReadLine();
-        int.TryParse(number, out var no);
-        for (var i = 0; i < no; i++)
+        string? number = Console.ReadLine();
+        int.TryParse(number, out int no);
+        for (int i = 0; i < no; i++)
         {
-            Employee emp = new Employee
+            var emp = new Employee
             {
                 // int.TryParse(Console.ReadLine(), out emp.Id);
                 Id = ++autoId
             };
             Console.Write("Enter employee name: ");
-            var name = Console.ReadLine();
+            string? name = Console.ReadLine();
 
             if (!string.IsNullOrWhiteSpace(name))
             {
@@ -45,14 +45,14 @@ public struct Employee
 
             // take position form the user 
             Console.Write("Select employee position: 1-Manager, 2-Offcier, 3-Clerk: ");
-            int.TryParse(Console.ReadLine(), out var positionInput);
-            emp.EmployeePosition = (Position) positionInput;
+            int.TryParse(Console.ReadLine(), out int positionInput);
+            emp.EmployeePosition = (Position)positionInput;
 
             employees.Add(emp);
         }
         return employees;
     }
-    public readonly void PrintEmpData() => Console.WriteLine("Employee ID {0}, Name: {1}, Salary: {2}, Position: {3}", this.Id, this.Name, this.Salary, this.EmployeePosition);
+    public readonly void PrintEmpData() => Console.WriteLine("Employee ID {0}, Name: {1}, Salary: {2}, Position: {3}", Id, Name, Salary, EmployeePosition);
 
 }
 

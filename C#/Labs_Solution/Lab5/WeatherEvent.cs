@@ -35,6 +35,7 @@ public class WeatherEvent
         }
 
         WeatherChanged?.Invoke(message);
+
     }
     // public event WeatherHandler? WeatherVeryHot;
     //     public event WeatherHandler? WeatherHot;
@@ -45,5 +46,5 @@ public class WeatherEvent
     //     public void OnWeatherModerate() => WeatherModerate?.Invoke();
 
 
-    public static double CelsiusToFahrenheit(int celsius) => (celsius * 9 / 5) + 32;
+    public static double CelsiusToFahrenheit(int celsius) => celsius * 9 / 5 + 32;
 }

@@ -10,7 +10,7 @@
 // IEnumerable<int> tes = [1, 3, 3];
 
 
-Employee employee = new Employee();
+var employee = new Employee();
 IEnumerable<Employee> employees = employee.Fill_Employee();
 
 foreach (Employee emp in employees)

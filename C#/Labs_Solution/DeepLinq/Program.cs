@@ -105,9 +105,9 @@ var nums = new List<int> { 1, 2, 3, 4, 5 };
 
 PrintThese(nums);
 
-void PrintThese(params List<int> numbers)
+static void PrintThese(params List<int> numbers)
 {
-    foreach (var number in numbers)
+    foreach (int number in numbers)
     {
         System.Console.WriteLine(number);
     }
