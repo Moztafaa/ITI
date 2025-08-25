@@ -9,7 +9,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Update="frmLogin.cs">
+      <Compile Update="Task2Form.cs">
         <SubType>Form</SubType>
       </Compile>
     </ItemGroup>
