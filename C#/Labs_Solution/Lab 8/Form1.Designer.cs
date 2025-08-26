@@ -2,7 +2,7 @@
 
 partial class Form1
 {
-/// <summary>
+    /// <summary>
     ///  Required designer variable.
     /// </summary>
     private System.ComponentModel.IContainer components = null;
@@ -27,12 +27,16 @@ partial class Form1
     ///  Required method for Designer support - do not modify
     ///  the contents of this method with the code editor.
     /// </summary>
+    private System.Windows.Forms.Label labelName;
+    private System.Windows.Forms.ComboBox comboBox1;
+    private System.Windows.Forms.StatusStrip statusStrip1;
+    private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelPosition;
+    private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabelDistance;
     private System.Windows.Forms.MenuStrip menuStrip1;
     private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem blueToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem greenToolStripMenuItem;
     private System.Windows.Forms.ToolStripMenuItem redToolStripMenuItem;
-    private System.Windows.Forms.Label labelName;
 
     /// <summary>
     /// Required method for Designer support - do not modify
@@ -40,28 +44,37 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
+        labelName = new System.Windows.Forms.Label();
+        comboBox1 = new System.Windows.Forms.ComboBox();
+        statusStrip1 = new System.Windows.Forms.StatusStrip();
+        toolStripStatusLabelPosition = new System.Windows.Forms.ToolStripStatusLabel();
+        toolStripStatusLabelDistance = new System.Windows.Forms.ToolStripStatusLabel();
         menuStrip1 = new System.Windows.Forms.MenuStrip();
         colorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
         blueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
         greenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
         redToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-        labelName = new System.Windows.Forms.Label();
-        toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-        toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-        menuStrip2 = new System.Windows.Forms.MenuStrip();
-        toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-        toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-        comboBox1 = new System.Windows.Forms.ComboBox();
-        toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-        toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-        toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
-        menuStrip1.SuspendLayout();
         SuspendLayout();
         //
         // menuStrip1
         //
+        // (no menu strip) initialize label and combobox below
+        //
+        // labelName
+        //
+        labelName.AutoSize = true;
+        labelName.Font = new System.Drawing.Font("Segoe UI", 20F);
+        labelName.Location = new System.Drawing.Point(343, 198);
+        labelName.Name = "labelName";
+        labelName.Size = new System.Drawing.Size(88, 37);
+        labelName.TabIndex = 1;
+        labelName.Text = "Name";
+        //
+        //
+        // menuStrip1
+        //
         menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { colorToolStripMenuItem });
-        menuStrip1.Location = new System.Drawing.Point(0, 24);
+        menuStrip1.Location = new System.Drawing.Point(0, 0);
         menuStrip1.Name = "menuStrip1";
         menuStrip1.Size = new System.Drawing.Size(800, 24);
         menuStrip1.TabIndex = 0;
@@ -94,49 +107,20 @@ partial class Form1
         redToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
         redToolStripMenuItem.Text = "Red";
         redToolStripMenuItem.Click += RedToolStripMenuItem_Click;
+
+        // statusStrip1
         //
-        // labelName
-        //
-        labelName.AutoSize = true;
-        labelName.Font = new System.Drawing.Font("Segoe UI", 20F);
-        labelName.Location = new System.Drawing.Point(343, 198);
-        labelName.Name = "labelName";
-        labelName.Size = new System.Drawing.Size(88, 37);
-        labelName.TabIndex = 1;
-        labelName.Text = "Name";
-        //
-        // toolStripMenuItem1
-        //
-        toolStripMenuItem1.Name = "toolStripMenuItem1";
-        toolStripMenuItem1.Size = new System.Drawing.Size(32, 19);
-        //
-        // toolStripMenuItem2
-        //
-        toolStripMenuItem2.Name = "toolStripMenuItem2";
-        toolStripMenuItem2.Size = new System.Drawing.Size(32, 19);
-        //
-        // menuStrip2
-        //
-        menuStrip2.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-        menuStrip2.Location = new System.Drawing.Point(0, 0);
-        menuStrip2.Name = "menuStrip2";
-        menuStrip2.Size = new System.Drawing.Size(800, 24);
-        menuStrip2.TabIndex = 2;
-        menuStrip2.Text = "menuStrip2";
-        //
-        // toolStripMenuItem3
-        //
-        toolStripMenuItem3.Name = "toolStripMenuItem3";
-        toolStripMenuItem3.Size = new System.Drawing.Size(32, 19);
-        //
-        // toolStripMenuItem4
-        //
-        toolStripMenuItem4.Name = "toolStripMenuItem4";
-        toolStripMenuItem4.Size = new System.Drawing.Size(32, 19);
+        statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { toolStripStatusLabelPosition, toolStripStatusLabelDistance });
+        statusStrip1.Location = new System.Drawing.Point(0, 428);
+        statusStrip1.Name = "statusStrip1";
+        statusStrip1.Size = new System.Drawing.Size(800, 22);
+        statusStrip1.TabIndex = 4;
+        statusStrip1.Text = "statusStrip1";
         //
         // comboBox1
         //
         comboBox1.FormattingEnabled = true;
+        comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
         comboBox1.Items.AddRange(new object[] { "Red", "Green", "Blue" });
         comboBox1.Location = new System.Drawing.Point(187, 103);
         comboBox1.Name = "comboBox1";
@@ -144,56 +128,33 @@ partial class Form1
         comboBox1.TabIndex = 3;
         comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged_1;
         //
-        // toolStripMenuItem5
+        // status labels default text
         //
-        toolStripMenuItem5.Name = "toolStripMenuItem5";
-        toolStripMenuItem5.Size = new System.Drawing.Size(32, 19);
-        //
-        // toolStripMenuItem6
-        //
-        toolStripMenuItem6.Name = "toolStripMenuItem6";
-        toolStripMenuItem6.Size = new System.Drawing.Size(32, 19);
-        //
-        // toolStripMenuItem7
-        //
-        toolStripMenuItem7.Name = "toolStripMenuItem7";
-        toolStripMenuItem7.Size = new System.Drawing.Size(32, 19);
+        toolStripStatusLabelPosition.Name = "toolStripStatusLabelPosition";
+        toolStripStatusLabelPosition.Size = new System.Drawing.Size(100, 17);
+        toolStripStatusLabelPosition.Text = "Pos: -";
+        toolStripStatusLabelDistance.Name = "toolStripStatusLabelDistance";
+        toolStripStatusLabelDistance.Size = new System.Drawing.Size(100, 17);
+        toolStripStatusLabelDistance.Text = "Distance: -";
         //
         // Form1
         //
         AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
         AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
         ClientSize = new System.Drawing.Size(800, 450);
+        Controls.Add(menuStrip1);
+        Controls.Add(statusStrip1);
         Controls.Add(comboBox1);
         Controls.Add(labelName);
-        Controls.Add(menuStrip1);
-        Controls.Add(menuStrip2);
         MainMenuStrip = menuStrip1;
         Text = "Form1";
         Load += Form1_Load;
-        menuStrip1.ResumeLayout(false);
-        menuStrip1.PerformLayout();
+
         ResumeLayout(false);
         PerformLayout();
     }
 
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
 
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-
-    private System.Windows.Forms.ComboBox comboBox1;
-
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
-
-    private System.Windows.Forms.MenuStrip menuStrip2;
-
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-
-    private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
 
     #endregion
 }
