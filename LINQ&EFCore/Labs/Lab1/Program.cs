@@ -1,4 +1,5 @@
-﻿using Dumpify;
+﻿using System.Collections;
+using Dumpify;
 
 namespace Lab1;
 
@@ -15,33 +16,27 @@ class Program
 
         IEnumerable<string> res1 = list.Where(p => p.Age >= 30).Select(p => p.Name);
 
+
         // 2
         IEnumerable<Person> res2Q = from person in list
                                     where person.City == "Cairo" && person.Salary > 25000 && person.Salary < 35000
                                     select person;
 
-        IEnumerable<Person> res2 = list.Where(person => person.City == "Cairo" && person.Salary > 25000 && person.Salary < 35000);
+        IEnumerable<Person> res2 =
+            list.Where(person => person.City == "Cairo" && person.Salary > 25000 && person.Salary < 35000);
 
         //3
         IEnumerable<string> res3Q = from p in list
                                     select p.Name.ToUpper();
         IEnumerable<string> res3 = list.Select(p => p.Name.ToUpper());
 
+
         // 4
         var res4Q = from p in list
-                    select new
-                    {
-                        p.Name,
-                        TenureYears = (DateTime.Now - p.HireDate).TotalDays / 365.25
-                    };
+                    select new { p.Name, TenureYears = (DateTime.Now - p.HireDate).TotalDays / 365.25 };
 
-        var res4 = list.Select(
-            static p => new
-            {
-                p.Name,
-                TenureYears = (DateTime.Now - p.HireDate).TotalDays / 365.25
-            }
-        );
+        var res4 = list.Select(static p => new { p.Name, TenureYears = (DateTime.Now - p.HireDate).TotalDays / 365.25 });
+
 
         // 5
         IEnumerable<Person> res5Q = from p in list
@@ -49,7 +44,7 @@ class Program
                                     select p;
 
         IEnumerable<Person> res5 = list.OrderByDescending(p => p.Age)
-                        .ThenBy(p => p.Name);
+            .ThenBy(p => p.Name);
 
         // 6
 
@@ -67,7 +62,7 @@ class Program
         var res7 = list.OrderByDescending(p => p.Salary).Select(p => new { p.Name, p.Salary }).Take(3);
 
 
-        // 8 
+        // 8
         IEnumerable<Person> res8Q = (from p in list
                                      orderby p.Age
                                      select p).Skip(2).Take(5);
@@ -86,25 +81,21 @@ class Program
         // 11
         IEnumerable<int> res11 = nums.Order().SkipWhile(n => n < 10);
 
-
         // 12
         var res12 = list.Where(p => p.City == "Cairo" && p.Age >= 28)
             .OrderByDescending(p => p.HireDate)
-            .Select(p => new
-            {
-                p.Name,
-                TenureYears = (DateTime.Now - p.HireDate).TotalDays / 365.25
-            })
+            .Select(p => new { p.Name, TenureYears = (DateTime.Now - p.HireDate).TotalDays / 365.25 })
             .Take(3);
 
 
+        res12.Dump();
 
-        string s = null;
-        System.Console.WriteLine(s);
+
+
+
+
     }
 }
-
-
 
 public class Person
 {
@@ -123,6 +114,7 @@ public class Person
         HireDate = hireDate;
     }
 }
+
 public static class Data
 {
     public static List<Person> People = new()
@@ -136,8 +128,12 @@ public static class Data
         new("Sarah", 33, "Cairo", 33000m, new DateTime(2018, 9, 20)),
         new("Youssef", 27, "Alexandria", 21000m, new DateTime(2023, 5, 8)),
         new("Dina", 36, "Cairo", 38000m, new DateTime(2017, 12, 1)),
-        new("Mahmoud",    30, "Giza", 30000m, new DateTime(2020, 4, 18)),
+        new("Mahmoud", 30, "Giza", 30000m, new DateTime(2020, 4, 18)),
     };
 
+    public static void Do()
+    {
+        Console.WriteLine("Hello");
+    }
     public static int[] Numbers = new[] { 3, 6, 9, 12, 15, 2, 4, 8, 16, 1, 5, 7, 10, 14, 18, 20 };
 }

@@ -79,11 +79,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\LINQ&EFCore\\Labs_Solution\\Lab1\\Lab1.csproj",
+      "projectUniqueName": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\LINQ&EFCore\\Labs\\Lab1\\Lab1.csproj",
       "projectName": "Lab1",
-      "projectPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\LINQ&EFCore\\Labs_Solution\\Lab1\\Lab1.csproj",
+      "projectPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\LINQ&EFCore\\Labs\\Lab1\\Lab1.csproj",
       "packagesPath": "C:\\Users\\Mostafa Ibrahim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\LINQ&EFCore\\Labs_Solution\\Lab1\\obj\\",
+      "outputPath": "C:\\Users\\Mostafa Ibrahim\\Documents\\ITI-4Months\\ITI\\LINQ&EFCore\\Labs\\Lab1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
