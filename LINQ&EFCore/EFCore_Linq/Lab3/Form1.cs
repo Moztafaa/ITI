@@ -40,7 +40,14 @@ public partial class Form1 : Form
         Department? department = ctx.Departments.FirstOrDefault(d => d.DepartmentName == deptName);
         var student = new Student { StudentName = name, Email = email, DepartmentId = department.DepartmentId };
         ctx.Students.Add(student);
-        // ctx.Entry(student).State = EntityState.Added;
+
+
+
+
+        ctx.Entry(student).State = EntityState.Added;
+
+
+
         ctx.SaveChanges();
         MessageBox.Show("Student created successfully");
     }
