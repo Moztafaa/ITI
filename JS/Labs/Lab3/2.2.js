@@ -2,6 +2,6 @@
   return obj[key] + (key === "age" ? " years old" : "");
 }
 
-let obj = {nm: "ali", age: 10};
-let key = "age";
+const obj = {nm: "ali", age: 10};
+const key = "age";
 console.log(dispVal(obj, key));

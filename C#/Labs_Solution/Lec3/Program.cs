@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using Dumpify;
 namespace Lec3;
 
@@ -23,7 +23,7 @@ internal static class ClassRoom
                 new Student
             {
                 Name = "Sara",
-                Grades = new Dictionary<string, int>
+                    Grades = new Dictionary<string, int>
                 {
                     { "Math", 95 },
                     { "Science", 89 },
