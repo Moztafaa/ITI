@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border: 1px solid red;
+        }
+        .parent{
+            position: relative;
+            left: 10px;
+            top: 10px;
+            width: 300px;
+            height: 300px;
+        }
+        .child{
+            position: relative;
+            left: 20px;
+            top: 20px;
+            width: 250px;
+            height: 250px;
+        
+        }
+        .lastchild{
+             position: relative;
+            left: 30px;
+            top: 30px;
+            width: 200px;
+            height: 200px;
+        
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="txt1">
+    <input type="button" value="click" id="btn">
+    <h1>Welcome</h1>
+    <div class="parent">
+        <div class="child">
+            <div class="lastchild">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
