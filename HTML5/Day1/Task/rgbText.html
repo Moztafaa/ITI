@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>RGB Color Text Changer</h1>
+
+    <div>
+      <label for="redSlider">Red: <span id="redValue">128</span></label>
+      <br />
+      <input type="range" id="redSlider" min="0" max="255" value="128" />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="greenSlider">Green: <span id="greenValue">128</span></label>
+      <br />
+      <input type="range" id="greenSlider" min="0" max="255" value="128" />
+    </div>
+
+    <br />
+
+    <div>
+      <label for="blueSlider">Blue: <span id="blueValue">128</span></label>
+      <br />
+      <input type="range" id="blueSlider" min="0" max="255" value="128" />
+    </div>
+
+    <br /><br />
+
+    <p id="colorText">
+      Change the 3 Color Ranges above and observe my color Change
+    </p>
+
+    <p>Current RGB: <span id="rgbDisplay">rgb(128, 128, 128)</span></p>
+
+    <script>
+      var redSlider = document.getElementById("redSlider");
+      var greenSlider = document.getElementById("greenSlider");
+      var blueSlider = document.getElementById("blueSlider");
+      var redValue = document.getElementById("redValue");
+      var greenValue = document.getElementById("greenValue");
+      var blueValue = document.getElementById("blueValue");
+      var colorText = document.getElementById("colorText");
+      var rgbDisplay = document.getElementById("rgbDisplay");
+
+      function updateColor() {
+        var r = redSlider.value;
+        var g = greenSlider.value;
+        var b = blueSlider.value;
+
+        var rgbColor = "rgb(" + r + ", " + g + ", " + b + ")";
+
+        colorText.style.color = rgbColor;
+        rgbDisplay.textContent = rgbColor;
+
+        redValue.textContent = r;
+        greenValue.textContent = g;
+        blueValue.textContent = b;
+      }
+
+      redSlider.addEventListener("input", updateColor);
+      greenSlider.addEventListener("input", updateColor);
+      blueSlider.addEventListener("input", updateColor);
+
+      updateColor();
+    </script>
+  </body>
+</html>

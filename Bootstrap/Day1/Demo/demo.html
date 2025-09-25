@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .col-1{
+            width: 8.33%;
+        }
+        .col-2{}
+        .col-3{
+            width: 25%;
+        }
+        .col-12{
+            width: 100%;
+        }
+        .parent{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        @media (min-width:400px) {
+            body{
+                background-color: aquamarine;
+            }            
+        }
+
+        @media (min-width:700px) {
+            body{
+                background-color: aqua;
+            }
+
+            .col-md-3{
+                width: 25%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="col-12 col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore molestias mollitia eaque, doloribus at nesciunt voluptas ipsam molestiae deleniti, et magnam ipsum necessitatibus neque corrupti quibusdam repellat. Libero, voluptatibus non!</div>
+        <div class="col-12 col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore molestias mollitia eaque, doloribus at nesciunt voluptas ipsam molestiae deleniti, et magnam ipsum necessitatibus neque corrupti quibusdam repellat. Libero, voluptatibus non!</div>
+        <div class="col-12 col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore molestias mollitia eaque, doloribus at nesciunt voluptas ipsam molestiae deleniti, et magnam ipsum necessitatibus neque corrupti quibusdam repellat. Libero, voluptatibus non!</div>
+        <div class="col-12 col-md-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore molestias mollitia eaque, doloribus at nesciunt voluptas ipsam molestiae deleniti, et magnam ipsum necessitatibus neque corrupti quibusdam repellat. Libero, voluptatibus non!</div>
+    </div>
+</body>
+</html>

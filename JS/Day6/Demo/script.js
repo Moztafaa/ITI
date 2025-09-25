@@ -1,17 +1,17 @@
-// document.getElementsByClassName('parent')[0].onclick = function(){
-//     console.log('parent one')
-// }
-// document.getElementsByClassName('parent')[0].onclick = function(){
-//     console.log('test')
-// }
-// document.getElementsByClassName('child')[0].onclick = function(){
-//     console.log('child')
-// }
+// document.getElementsByClassName("parent")[0].onclick = function () {
+//   console.log("parent one");
+// };
+// document.getelementsbyclassname("parent")[0].onclick = function () {
+//   console.log("test");
+// };
+// document.getElementsByClassName("child")[0].onclick = function () {
+//   console.log("child");
+// };
 
-// document.getElementsByClassName('lastchild')[0].onclick = function(event){
-//     console.log('lastchild')
-//     event.stopPropagation()
-// }
+// document.getElementsByClassName("lastchild")[0].onclick = function (event) {
+//   console.log("lastchild");
+//   event.stopPropagation();
+// };
 
 /**addEventListener */
 //[f1,f2]
@@ -32,9 +32,23 @@
 //     console.log('mouse over event')
 //     // event.stopPropagation()
 //     // event.stopImmediatePropagation()
+// Adds the first listener
+// This listener is in the CAPTURE phase
+document.getElementsByClassName("parent")[0].addEventListener(
+  "click",
+  function () {
+    console.log("parent captures");
+  },
+  true
+);
 
+// This listener is in the BUBBLE phase
+document
+  .getElementsByClassName("lastchild")[0]
+  .addEventListener("click", function () {
+    console.log("lastchild bubbles");
+  });
 // })
-
 
 // document.getElementsByClassName('child')[0].addEventListener('click',function(){
 //     console.log('child')
@@ -49,18 +63,14 @@
 // })
 // onload=function(){}
 
-
-
-
 //1)instance event object
-var myEvent = new Event('test')
+var myEvent = new Event("test");
 
-var obj = document.getElementsByTagName('h1')[0]
+var obj = document.getElementsByTagName("h1")[0];
 // var obj={}
-obj.addEventListener('test',function(){
-    console.log('custom event')
-})
-
+obj.addEventListener("test", function () {
+  console.log("custom event");
+});
 
 // var result = parseInt(prompt('Enter your value'))
 // if(result>50){
@@ -69,23 +79,9 @@ obj.addEventListener('test',function(){
 //     obj.dispatchEvent(myEvent)
 // }
 
-document.getElementById('btn').onclick = function(){
-    var val = parseInt(document.getElementById('txt1').value)
-    if(val>50){
-        obj.dispatchEvent(myEvent)
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+document.getElementById("btn").onclick = function () {
+  var val = parseInt(document.getElementById("txt1").value);
+  if (val > 50) {
+    obj.dispatchEvent(myEvent);
+  }
+};

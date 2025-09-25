@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="bootstrap-5.3.8-dist/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.js"></script>
+    <style>
+      .breadcrumb-item + .breadcrumb-item::before {
+        content: ">>" !important;
+      }
+    </style>
+  </head>
+  <body>
+    <i class="bi bi-watch"></i>
+
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-volume-off-fill"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M10.717 3.55A.5.5 0 0 1 11 4v8a.5.5 0 0 1-.812.39L7.825 10.5H5.5A.5.5 0 0 1 5 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"
+      />
+    </svg>
+
+    <button class="btn btn-primary">Click</button>
+    <input type="button" class="btn btn-success" value="Click" />
+    <a href="#" class="btn btn-warning">Link</a>
+
+    <div>
+      <h3 class="btn btn-danger">Title</h3>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed ipsa
+      praesentium sint fuga, odio, nostrum iusto quae quasi deserunt maiores
+      quam magni ipsam cumque recusandae excepturi hic unde vel laborum!
+    </div>
+
+    <h1>Title</h1>
+    <span class="display-1">New Text</span>
+
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        data-bs-toggle="dropdown"
+      >
+        Menu
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">item#1</li>
+        <li class="dropdown-item">item#2</li>
+        <li class="dropdown-item">item#3</li>
+      </ul>
+    </div>
+
+    <button
+      class="btn btn-danger"
+      data-bs-toggle="collapse"
+      data-bs-target="#c1"
+    >
+      Collapse
+    </button>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. In laudantium
+      dignissimos quo quos, amet obcaecati dolore nobis quae qui nemo inventore.
+      Tempore itaque necessitatibus, modi porro dolorum minima ullam distinctio.
+    </div>
+
+    <div class="collapse card card-body" id="c1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium id
+      animi ipsam vitae eaque sapiente saepe, sit deleniti laborum porro vero?
+      Omnis nobis dicta accusantium iure, dolorum laudantium. Expedita,
+      mollitia?
+    </div>
+
+    <div class="card">
+      <div class="card-header" data-bs-toggle="collapse" data-bs-target="#c2">
+        <h3>Header</h3>
+      </div>
+      <div class="collapse" id="c2">
+        <div class="card-body">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+            molestias, fugiat suscipit cupiditate iure saepe quam corrupti unde,
+            magnam labore molestiae cum. Itaque nesciunt earum cupiditate aut
+            atque illum nobis!
+          </p>
+        </div>
+        <div class="card-footer">
+          <span class="text-muted">text</span>
+        </div>
+      </div>
+    </div>
+
+    <input type="text" pattern="" />
+    <div class="alert alert-warning alert-dismissible fade show">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem
+      magni natus sapiente voluptas eum. Optio sint quo praesentium blanditiis
+      esse obcaecati error, libero amet at tempora possimus vitae nisi autem!
+      <button class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+
+    <div>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias beatae
+      repellendus hic, aperiam iste et! Saepe unde blanditiis ratione, beatae
+      labore veniam illo itaque atque corporis mollitia cumque est quam.
+    </div>
+
+    <div class="progress w-50">
+      <div
+        class="progress-bar progress-bar-animated progress-bar-striped w-25"
+      ></div>
+    </div>
+
+    <div class="spinner-border"></div>
+    <div class="spinner-grow"></div>
+
+    <ul class="pagination justify-content-center">
+      <li class="page-item"><a href="#" class="page-link">Home</a></li>
+      <li class="page-item"><a href="#" class="page-link">Home</a></li>
+      <li class="page-item"><a href="#" class="page-link">Home</a></li>
+      <li class="page-item"><a href="#" class="page-link">Home</a></li>
+    </ul>
+
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">item1</a></li>
+      <li class="breadcrumb-item">item1</li>
+      <li class="breadcrumb-item">item1</li>
+      <li class="breadcrumb-item">item1</li>
+    </ol>
+
+    <button
+      class="btn btn-light"
+      data-bs-toggle="tooltip"
+      data-bs-placement="right"
+      data-bs-title="This my demo"
+    >
+      Tooltip
+    </button>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

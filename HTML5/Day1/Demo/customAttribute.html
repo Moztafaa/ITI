@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*
+    classes
+    */
+        [data-hello]{
+            color: red;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 data-hello>Welcome</h1>
+    <p data-hello>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique aliquid molestiae id ex ut, architecto ab assumenda, magnam obcaecati impedit eum culpa! Aliquam, voluptates neque. Corporis veritatis mollitia praesentium reprehenderit.</p>
+    <script>
+        /*
+        document.getElementById
+
+
+        */
+    //    document.querySelector//first match
+    //    document.querySelectorAll//all matches
+
+    //    $-JQuery(#id)
+    //  $('.c1')
+    //$('h1')
+    //$('[type="text"]')
+
+    // console.log(document.querySelectorAll('[data-hello]'))
+    // document.querySelectorAll('[data-hello]')[1].style.backgroundColor = 'aqua'
+
+
+        //dynamic objects
+        var elem = document.getElementsByTagName('h1')//htmlcollection ---h1
+        //static objects
+        var elem2 = document.querySelectorAll('h1')//nodelist---h1
+
+        console.log(elem)
+        console.log(elem2)
+
+        var newElem = document.createElement('h1')
+        newElem.innerHTML = "new Text data"
+        document.body.appendChild(newElem)
+
+        console.log(elem)
+        console.log(elem2)
+
+
+    </script>
+</body>
+</html>

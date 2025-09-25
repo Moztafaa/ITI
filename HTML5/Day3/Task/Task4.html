@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Task4 - CSS Playing Card</title>
+  <style>
+      .card {
+          position: relative;
+          width: 320px;
+          height: 480px;
+          background: #fff;
+          border: 2px solid #7e0f0f;
+          border-radius: 16px;
+          font-family: Georgia, serif;
+      }
+
+      .card .corner {
+          position: absolute;
+          color: #d0081c;
+          font-weight: 700;
+          font-size: 44px;
+          line-height: 1;
+          user-select: none;
+      }
+
+      .card .top-left {
+          top: 14px;
+          left: 16px;
+      }
+
+      .card .bottom-right {
+          right: 16px;
+          bottom: 14px;
+          transform: rotate(180deg);
+      }
+
+      .card .center {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .card .center-symbol {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .card .heart {
+          position: relative;
+          width: 140px;
+          height: 120px;
+          transform: rotate(180deg);
+      }
+
+      .card .heart::before,
+      .card .heart::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 70px;
+          width: 70px;
+          height: 110px;
+          background: #d0081c;
+          border-radius: 70px 70px 0 0;
+          transform: rotate(-45deg);
+          transform-origin: 0 100%;
+      }
+
+      .card .heart::after {
+          left: 0;
+          transform: rotate(45deg);
+          transform-origin: 100% 100%;
+      }
+
+      .card .triangle-up {
+          width: 0;
+          height: 0;
+          margin-top: -18px;
+          border-left: 28px solid transparent;
+          border-right: 28px solid transparent;
+          border-bottom: 40px solid #d0081c;
+          filter: drop-shadow(0 1px 0 rgba(0, 0, 0, 0.08));
+      }
+  </style>
+</head>
+<body>
+<div aria-label="Ace of Hearts card drawn with CSS" class="card">
+  <div class="corner top-left">A</div>
+
+  <div class="center">
+    <div class="center-symbol">
+      <div class="heart"></div>
+      <div class="triangle-up"></div>
+    </div>
+  </div>
+
+  <div class="corner bottom-right">A</div>
+</div>
+</body>
+</html>

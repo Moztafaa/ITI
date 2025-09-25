@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #img1{
+            position: absolute;
+            left: 20px;
+            top: 100px;
+            z-index: 5;
+        }
+        /* h1{}
+        h1 h2{} */
+        #img2{
+            position: absolute;
+            left: 70px;
+            top: 50px;
+            z-index: 5;
+        }
+        #p1{
+            border: 1px solid black;
+            width: 200px;
+            height: 150px;
+            overflow: scroll;
+        }
+        /*
+        specificty
+        id,class+attribute+pseudo-classes,tag+pseudo-elements
+        selectors
+        1-Basic Selectors(id,class,tag)
+        2-Attribute selector
+        3-Combinator selectos
+        4-Pseudo-classes
+        5-Pseudo-elements
+        */
+        /*Dynamic Pseudo classes*/
+        h1:hover{/*0,1,1*/
+            color: red;
+            background-color: bisque;
+        }
+        h1:active{
+            background-color: black;
+            color:aqua;
+        }
+        
+       
+        [type='text']:focus{
+            color: white;
+            background-color: aqua;
+        }
+        /*Link Pseudo classes*/
+        p:target{
+            font-size: 30px;
+            font-family: Georgia;
+            font-weight: bold;
+        }
+
+        /*UI Elements Pseudo classes
+        valid
+        invalid*/
+
+        [type='text']:valid+p{
+            display: none;
+        }
+
+        [type='text']:invalid+p{
+            display: block;
+        }
+        /*Structural Pesudo classes*/
+        li:first-child{
+            color: blue;
+        }
+        li:last-child{
+            color: gold;
+        }
+
+        li:nth-child(even){
+            background-color: aqua;
+        }
+
+        /*Pseudo elements*/
+        p::first-letter{
+            font-size: 40px;
+            color: blue;
+        }
+
+        p::first-line{
+            background-color: yellow;
+        }
+        p::after{
+            content: "new text";
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>item#1</li>
+        <li>item#2</li>
+        <li>item#3</li>
+        <li>item#4</li>
+        <li>item#5</li>
+    </ul>
+    <form>
+        <input type="text" required pattern="[a-z]{3}">
+        <p>invalid format</p>
+        <input type="submit">
+    </form>
+    <h1>Welcome</h1>
+    <input type="text">
+    <!-- <img src="../images/1.gif" id="img1">
+    <img src="../images/2.gif" id="img2"> -->
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta mollitia tempora eaque aperiam sequi! Quae distinctio quidem, optio velit officiis ipsam nemo facere facilis saepe ad error quia obcaecati ea.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellat dolorum adipisci maiores quibusdam, dolores perferendis ipsam inventore cupiditate quaerat eius libero! Consequatur, obcaecati? Inventore quis optio accusantium voluptatibus consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellat dolorum adipisci maiores quibusdam, dolores perferendis ipsam inventore cupiditate quaerat eius libero! Consequatur, obcaecati? Inventore quis optio accusantium voluptatibus consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt consequuntur quaerat eos voluptate sed nostrum perferendis distinctio pariatur amet dignissimos. Distinctio, a pariatur non facilis fuga accusantium optio nostrum voluptatem!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellat dolorum adipisci maiores quibusdam, dolores perferendis ipsam inventore cupiditate quaerat eius libero! Consequatur, obcaecati? Inventore quis optio accusantium voluptatibus consequuntur?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo possimus dignissimos quos impedit, natus optio porro numquam omnis nam iste perspiciatis reiciendis, dolor odio fugiat praesentium, aliquid aliquam assumenda aperiam.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo repellat dolorum adipisci maiores quibusdam, dolores perferendis ipsam inventore cupiditate quaerat eius libero! Consequatur, obcaecati? Inventore quis optio accusantium voluptatibus consequuntur?</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+    <a href="#p1">link</a>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quia blanditiis tempore nam quas nesciunt aliquam, doloremque sed id doloribus qui est expedita, iure atque a cum facere? Aliquam, voluptate.</p>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Task1</title>
+  <style>
+      .container {
+          border: 1px solid black;
+          padding: 20px;
+      }
+
+      input {
+          padding: 8px;
+          margin: 5px 0;
+          border: 2px solid #ccc;
+          border-radius: 4px;
+          width: 200px;
+      }
+
+      input:invalid,
+      input.error {
+          border-color: red;
+      }
+
+      input:valid {
+          border-color: green;
+      }
+
+      .error-message {
+          color: red;
+          font-size: 12px;
+          margin-top: 2px;
+          display: block;
+          min-height: 16px;
+      }
+
+      button {
+          padding: 10px 20px;
+          margin-top: 10px;
+          background-color: #007bff;
+          color: white;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+      }
+
+      button:hover {
+          background-color: #0056b3;
+      }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Change Email Address</h1>
+  <form id="changeEmailForm">
+    <input id="username" placeholder="UserName" required type="text"/>
+    <br/>
+    <span class="username-error error-message"></span>
+    <br/>
+
+    <input id="email" placeholder="Email" required type="email"/>
+    <br/>
+    <span class="email-error error-message"></span>
+    <br/>
+
+    <button type="submit">Change</button>
+  </form>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("changeEmailForm");
+    const usernameInput = document.getElementById("username");
+    const emailInput = document.getElementById("email");
+    const usernameError = document.querySelector(".username-error");
+    const emailError = document.querySelector(".email-error");
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    function validateUsername() {
+      if (usernameInput.value.trim() === "") {
+        usernameInput.classList.add("error");
+        usernameError.textContent = "Username is required";
+        return false;
+      } else {
+        usernameInput.classList.remove("error");
+        usernameError.textContent = "";
+        return true;
+      }
+    }
+
+    function validateEmail() {
+      const emailValue = emailInput.value.trim();
+
+      if (emailValue === "") {
+        emailInput.classList.add("error");
+        emailError.textContent = "Email is required";
+        return false;
+      } else if (!emailRegex.test(emailValue)) {
+        emailInput.classList.add("error");
+        emailError.textContent =
+          "Please enter a valid email address (e.g., user@example.com)";
+        return false;
+      } else {
+        emailInput.classList.remove("error");
+        emailError.textContent = "";
+        return true;
+      }
+    }
+
+    usernameInput.addEventListener("input", validateUsername);
+
+    emailInput.addEventListener("input", validateEmail);
+
+    form.addEventListener("submit", function (e) {
+
+      const isUsernameValid = validateUsername();
+      const isEmailValid = validateEmail();
+
+      if (isUsernameValid && isEmailValid) {
+        alert("Email address changed successfully!");
+      }
+    });
+
+    if (usernameInput.value.trim() === "") {
+      usernameInput.classList.add("error");
+      usernameError.textContent = "Username is required";
+    }
+
+    if (emailInput.value.trim() === "") {
+      emailInput.classList.add("error");
+      emailError.textContent = "Email is required";
+    }
+  });
+</script>
+</body>
+</html>

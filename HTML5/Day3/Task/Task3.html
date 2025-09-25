@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task3 - Canvas</title>
+  <style>
+      canvas {
+          border: 1px solid black;
+
+
+      }
+  </style>
+</head>
+<body>
+<canvas height="700" id="canvas" width="900"></canvas>
+
+
+<script>
+
+  const canvas = document.getElementById('canvas');
+  const ctx = canvas.getContext('2d');
+  const image = new Image();
+  image.src = './img.jpg'
+  image.onload = function () {
+    ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+    ctx.font = "50px Arial";
+    ctx.fillStyle = "yellow";
+    ctx.fillText("Leaf pretend to be a heart", 20, 600);
+  };
+</script>
+</body>
+</html>

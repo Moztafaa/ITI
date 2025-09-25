@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Tabs Interface</title>
+    <style>
+      .holder {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+      }
+      .tabs-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 20px;
+      }
+
+      .tab {
+        background-color: lightblue;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 14px;
+        transition: background-color 0.3s;
+      }
+
+      .tab:hover {
+        opacity: 0.8;
+      }
+
+      .tab.active {
+        background-color: orange;
+        color: white;
+      }
+
+      .posts-container {
+        margin-top: 20px;
+      }
+
+      .posts-container ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .posts-container li {
+        padding: 5px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      .loading {
+        color: #666;
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="holder">
+      <div class="tabs-container" id="tabsContainer"></div>
+      <div class="posts-container">
+        <div id="postsTitle"></div>
+        <ul id="postsList"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

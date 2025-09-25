@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task2 - hover css</title>
+  <style>
+      body {
+          min-height: 100vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+      }
+      button {
+          background: #f7cac9;
+          color: #222;
+          border: #a600ff solid 2px;
+          border-radius: 25px;
+          padding: 18px 40px;
+          font-size: 1.2rem;
+          cursor: pointer;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      }
+      button:hover {
+          box-shadow: 0 0 20px 4px #2196f3, 0 2px 8px rgba(0, 0, 0, 0.08);
+          transition: box-shadow 0.2s, background 0.2s;
+      }
+  </style>
+</head>
+<body>
+<button>Hover to Blink</button>
+</body>
+</html>

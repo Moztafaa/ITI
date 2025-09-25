@@ -275,6 +275,9 @@ public class Program
         // 33
         var q33 = students.ToDictionary(static s => s.Id);
         q33.Dump();
+        
+        var q33Q = students.ToDictionary(static s => s.Id, static s => s.Name);
+        q33Q.Dump();
 
         // 34
         ArrayList mix = [1, "two", 3];
