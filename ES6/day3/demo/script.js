@@ -26,53 +26,48 @@ var arr = new Array();
 // }//object
 //function caller
 //es6 syntax
- class Employee{
-    //optional 
-    name;
-    age;
-    //private memeber not optional
-    #year;
-    constructor(n,a=0,y=0){
-        if(!n){
-            throw("error you should enter name");
-
-        }
-        this.name = n;
-        this.age = a;
-        this.#year = y;
-        
+class Employee {
+  //optional
+  name;
+  age;
+  //private memeber not optional
+  #year;
+  constructor(n, a = 0, y = 0) {
+    if (!n) {
+      throw new Error("error you should enter name");
     }
-    get getYear(){
-        return this.#year + 10;
-
-    }
-    set setYear(value){
-
-        this.#year = value;
-    }
-    print(){
-            console.log(this.name,this.age);
-        }
-   //static methode
-   static myStaticMethode(){
+    this.name = n;
+    this.age = a;
+    this.#year = y;
+  }
+  get getYear() {
+    return this.#year + 10;
+  }
+  set setYear(value) {
+    this.#year = value;
+  }
+  print() {
+    console.log(this.name, this.age);
+  }
+  //static methode
+  static myStaticMethode() {
     console.log("this is a static method");
-   }
+  }
 }
 //call static method
 Employee.myStaticMethode();
-class StaticClass{
-  constructor(){
-    throw("this is a static class");
-
-     }
-    static test(){
-        console.log("hello");
-    }
+class StaticClass {
+  constructor() {
+    throw "this is a static class";
+  }
+  static test() {
+    console.log("hello");
+  }
 }
 // var m = new StaticClass();
 StaticClass.test();
 //////////////////////
-var emp =  new Employee("menna",25,1994);
+var emp = new Employee("menna", 25, 1994);
 emp.name = 30;
 //getter setter
 // emp.print();
